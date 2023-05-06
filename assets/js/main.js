@@ -48,4 +48,13 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
         };
     }
     /*-- Faq Js End --*/
+
+    new WOW().init();
+
+    jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
 })(jQuery);

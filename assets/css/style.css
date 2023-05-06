@@ -28327,6 +28327,17 @@ CSS table of content
   background: #ffffff;
   padding: 12.5px 0px;
 }
+.header-section.sticky {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 9999;
+}
 
 .header-inner {
   display: flex;
@@ -28410,9 +28421,14 @@ CSS table of content
 .mobile-menu .navbar-toggler svg {
   font-size: 26px;
 }
+.mobile-menu .btn-close {
+  background-image: none;
+  opacity: 1;
+}
 
 .mobile-menu-body {
   background: #FFFFFF;
+  height: 100vh;
 }
 .mobile-menu-body .offcanvas-header .btn-close {
   background: none;
@@ -28435,17 +28451,24 @@ CSS table of content
   margin: 0px;
 }
 .mobile-menu-list li {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   text-align: left;
+  min-width: -moz-max-content !important;
+  min-width: max-content !important;
 }
 .mobile-menu-list li a {
   font-weight: 600;
   font-size: 16px;
   line-height: 30px;
   color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .mobile-menu-list li a.whitepaper-btn {
   color: #ffffff;
+  height: 45px;
+  margin-top: 10px;
 }
 
 .mobile-menu-social {
@@ -28454,14 +28477,14 @@ CSS table of content
   justify-content: space-between;
   list-style: none;
   padding: 0px;
-  margin: 0px;
+  margin: 20px 0px;
   width: 120px;
 }
 .mobile-menu-social li a {
   height: 45px;
   width: 45px;
   background: rgba(0, 0, 0, 0.08);
-  border-radius: 23px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;

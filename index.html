@@ -24,7 +24,7 @@
 
 <body>
     <!-- Header Section Start -->
-    <section class="header-section" id="header">
+    <section class="header-section">
         <div class="container">
             <div class="header-inner">
                 <div class="header-left">
@@ -56,24 +56,24 @@
                     <div class="offcanvas offcanvas-end mobile-menu-body" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <a href="./index.html" class="logo"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
+                            <a href="./index.html" class="logo btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><span class="iconify"
                                     data-icon="material-symbols:close-rounded"></span></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <ul class="mobile-menu-list">
-                                    <li><a href="#aboutUs">About Us</a></li>
-                                    <li><a href="#partners">Partners</a></li>
-                                    <li><a href="#tokenInfo">Token Info</a></li>
-                                    <li><a href="#roadmap">Roadmap</a></li>
-                                    <li><a href="#faq">FAQ</a></li>
-                                    <li><a href="#" class="whitepaper-btn">Whitepaper</a></li>
+                                    <li class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#aboutUs">About Us</a></li>
+                                    <li class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#partners">Partners</a></li>
+                                    <li class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#tokenInfo">Token Info</a></li>
+                                    <li class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#roadmap">Roadmap</a></li>
+                                    <li class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#faq">FAQ</a></li>
+                                    <li class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><a href="#" class="whitepaper-btn">Whitepaper</a></li>
                                 </ul>
                                 <ol class="mobile-menu-social">
-                                    <li><a href="#" target="_blank" class="social-link"><img src="./assets/images/icons/twitter-icon.svg" alt="twiter"></a></li>
-                                    <li><a href="#" target="_blank" class="social-link"><img src="./assets/images/icons/telegram.svg" alt="twiter"></a></li>
-                                    <li><a href="#" target="_blank" class="social-link"><img src="./assets/images/icons/discord.svg" alt="twiter"></a></li>
+                                    <li><a href="#" target="_blank" class="social-link btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./assets/images/icons/twitter-icon.svg" alt="twiter"></a></li>
+                                    <li><a href="#" target="_blank" class="social-link btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./assets/images/icons/telegram.svg" alt="twiter"></a></li>
+                                    <li><a href="#" target="_blank" class="social-link btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./assets/images/icons/discord.svg" alt="twiter"></a></li>
                                 </ol>
                             </ul>
                         </div>
@@ -85,7 +85,7 @@
     <!-- Header Section End -->
     
     <!-- Banner Section Start -->
-    <section class="banner-section uig-pt-145 uig-pb-155 uig-lg-pt-120 uig-lg-pb-125 uig-md-pt-100 uig-md-pb-100">
+    <section class="banner-section uig-pt-145 uig-pb-155 uig-lg-pt-120 uig-lg-pb-125 uig-md-pt-100 uig-md-pb-100" id="home">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -414,7 +414,7 @@
                 <a href="index.html" class="footer-logo"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
                 <p>We're not just a meme token, we're a movement. Blue Chicken is all about breaking down barriers, building bridges, and bringing people together through the power of humor.</p>
                 <p class="mt-0">Copyright © 2023 Blue Chicken. All Rights Reserved.</p>
-                <a href="#header" class="back-to-top"><img src="./assets/images/icons/top-arrow.svg" alt="icon"></a>
+                <a href="#home" class="back-to-top"><img src="./assets/images/icons/top-arrow.svg" alt="icon"></a>
             </div>
         </div>
     </section>
@@ -437,7 +437,7 @@
 
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
-    <script>
+    <!-- <script>
         new WOW().init();
     </script>
     <script>
@@ -447,7 +447,7 @@
                 time: 1000
             });
         });
-    </script>
+    </script> -->
     
 </body>
 
