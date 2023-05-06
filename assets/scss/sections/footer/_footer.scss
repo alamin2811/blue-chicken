@@ -76,3 +76,30 @@
         }
     }
 }
+@media only screen and (max-width: 768px){
+    .footer-social-list ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        li{
+            width: 33.33%;
+            a{
+                height: 140px;
+            }
+        }
+    }
+    .footer-chicken-img{
+        max-width: 200px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .footer-social-list ul{
+        li{
+            padding: 0px 10px;
+            a{
+                height: 100px;
+                padding: 24px;
+            }
+        }
+    }
+}
+

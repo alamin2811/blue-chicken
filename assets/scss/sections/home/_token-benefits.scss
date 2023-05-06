@@ -17,3 +17,12 @@
         padding-left: 20px;
     }
 }
+
+@media only screen and (max-width: 768px){
+    .token-benefits-list{
+        padding: 0px !important;
+    }
+    .token-benefits-right{
+        margin-top: 0px;
+    }
+}

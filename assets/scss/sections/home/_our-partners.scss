@@ -27,3 +27,30 @@
         }
     }
 }
+@media only screen and (max-width: 768px){
+    .our-partners-content {
+        ul{
+            li{
+                width: 25%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    .our-partners-content {
+        ul{
+            li{
+                width: 33.33%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 425px){
+    .our-partners-content {
+        ul{
+            li{
+                width: 50%;
+            }
+        }
+    }
+}

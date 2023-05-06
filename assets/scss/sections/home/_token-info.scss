@@ -74,3 +74,27 @@
         margin-top: -230px;
     }
 }
+@media only screen and (max-width: 768px){
+    .token-chicken-img1 {
+        max-width: 110px;
+        right: 70px;
+        bottom: 140px;
+    }
+    .token-chicken-img2 {
+        max-width: 240px;
+        margin-left: 0px;
+        margin-top: -170px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .token-info-bg{
+        padding: 25px;
+        border-radius: 35px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .token-chicken-img1{
+        display: none;
+    }
+}

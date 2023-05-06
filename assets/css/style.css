@@ -379,6 +379,12 @@ img {
     font-size: 26px;
   }
 }
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 36px;
+    line-height: 55px;
+  }
+}
 .section-title .title {
   font-size: 18px;
   font-weight: 700;
@@ -28546,8 +28552,36 @@ CSS table of content
     margin: auto;
     margin-bottom: 30px;
   }
+  .banner-left .banner-chicken1 {
+    left: 0px;
+  }
   .banner-right .chicken-img {
     margin: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner-left ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+    max-width: 340px;
+    margin: auto;
+  }
+  .banner-left ul li {
+    width: 50%;
+    padding: 10px;
+  }
+  .banner-left ul li a {
+    width: 100% !important;
+  }
+  .banner-left ul li:nth-child(1) {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .banner-left .banner-chicken1 {
+    top: -90px;
+    max-width: 60px;
   }
 }
 /*--------------------------------
@@ -28598,6 +28632,11 @@ CSS table of content
   margin-bottom: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+  .about-right {
+    margin-top: 60px;
+  }
+}
 .token-benefits-list {
   margin-top: 25px;
 }
@@ -28614,6 +28653,14 @@ CSS table of content
   padding-left: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  .token-benefits-list {
+    padding: 0px !important;
+  }
+  .token-benefits-right {
+    margin-top: 0px;
+  }
+}
 .counter-card {
   background: linear-gradient(90deg, #EEF6FB 0%, rgba(238, 246, 251, 0.3) 100%);
   border-radius: 20px;
@@ -28661,6 +28708,21 @@ CSS table of content
 @media only screen and (max-width: 1200px) {
   .our-partners-content ul li {
     padding: 0px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .our-partners-content ul li {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .our-partners-content ul li {
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .our-partners-content ul li {
+    width: 50%;
   }
 }
 .token-info-inner {
@@ -28739,6 +28801,29 @@ CSS table of content
     max-width: 320px;
     margin-left: 50px;
     margin-top: -230px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .token-chicken-img1 {
+    max-width: 110px;
+    right: 70px;
+    bottom: 140px;
+  }
+  .token-chicken-img2 {
+    max-width: 240px;
+    margin-left: 0px;
+    margin-top: -170px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .token-info-bg {
+    padding: 25px;
+    border-radius: 35px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .token-chicken-img1 {
+    display: none;
   }
 }
 .roadmap-section {
@@ -28959,5 +29044,29 @@ CSS table of content
 @media only screen and (max-width: 991px) {
   .footer-social-list ul li a {
     height: 140px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer-social-list ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-social-list ul li {
+    width: 33.33%;
+  }
+  .footer-social-list ul li a {
+    height: 140px;
+  }
+  .footer-chicken-img {
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .footer-social-list ul li {
+    padding: 0px 10px;
+  }
+  .footer-social-list ul li a {
+    height: 100px;
+    padding: 24px;
   }
 }

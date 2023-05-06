@@ -107,6 +107,9 @@
             margin: auto;
             margin-bottom: 30px;
         }
+        .banner-chicken1{
+            left: 0px;
+        }
     }
     .banner-right {
         .chicken-img{
@@ -114,3 +117,33 @@
         }
     }
   }
+
+@media only screen and (max-width: 768px){
+    .banner-left {
+        ul{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0px;
+            max-width: 340px;
+            margin: auto;
+            li{
+                width: 50%;
+                padding: 10px;
+                a{
+                    width: 100% !important;
+                }
+                &:nth-child(1){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 425px){
+    .banner-left {
+        .banner-chicken1{
+            top: -90px;
+            max-width: 60px;
+        }
+    }
+}
