@@ -28675,10 +28675,12 @@ CSS table of content
 .roadmap-card-body ul {
   list-style: none;
   margin: 0px;
+  padding: 0px;
 }
 .roadmap-card-body ul li {
   position: relative;
   margin-bottom: 18px;
+  padding-left: 25px;
 }
 .roadmap-card-body ul li::before {
   content: "";
@@ -28688,7 +28690,7 @@ CSS table of content
   background: transparent;
   border-radius: 50%;
   position: absolute;
-  left: -25px;
+  left: 0px;
   top: 10px;
 }
 .roadmap-card-body ul li.active::before {
@@ -28737,7 +28739,7 @@ CSS table of content
 .faq-content .accordion.active::after {
   content: url(../images/icons/icon-minuse.svg);
   position: absolute;
-  top: -5px;
+  top: -10px;
 }
 .faq-content .accordion-panel {
   padding: 0px;
@@ -28758,49 +28760,68 @@ CSS table of content
 /*--------------------------------
 07. footer Style
 --------------------------------*/
-.footer-section {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.footer-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 27px 0px;
-}
-.footer-inner p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 171%;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 0px;
-}
-.footer-inner ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 182px;
+.footer-chicken-img {
+  max-width: 264px;
   width: 100%;
-  padding: 0px;
-  list-style: none;
-  margin: 0px;
+  margin: auto;
+  text-align: center;
 }
 
-@media only screen and (max-width: 575px) {
-  .footer-inner ul {
-    max-width: 150px;
-  }
+.footer-social-list {
+  margin-top: -60px;
 }
-@media only screen and (max-width: 480px) {
-  .footer-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-inner ul {
-    margin: auto;
-  }
+.footer-social-list ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px -15px;
+  list-style: none;
+  padding: 0px;
+}
+.footer-social-list ul li {
+  width: 20%;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+.footer-social-list ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 210px;
+  background: rgba(29, 161, 242, 0.08);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+
+.main-footer {
+  text-align: center;
+  position: relative;
+  max-width: 569px;
+  margin: auto;
+  padding-top: 27px;
+  padding-bottom: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-footer a {
+  position: relative;
+  z-index: 2;
+}
+.main-footer p {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.main-footer .back-to-top {
+  margin-top: 40px;
+}
+.main-footer .footer-shape {
+  position: absolute;
+  bottom: 0px;
 }
