@@ -47,8 +47,39 @@
                         <li><a href="#" class="whitepaper-btn">Whitepaper</a></li>
                     </ul>
                 </div>
+                <!-- mobile menu -->
+                <div class="mobile-menu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation" fdprocessedid="7fbgmc">
+                        <span class="iconify" data-icon="fa6-solid:bars"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end mobile-menu-body" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a href="./index.html" class="logo"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><span class="iconify"
+                                    data-icon="material-symbols:close-rounded"></span></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <ul class="mobile-menu-list">
+                                    <li><a href="#aboutUs">About Us</a></li>
+                                    <li><a href="#partners">Partners</a></li>
+                                    <li><a href="#tokenInfo">Token Info</a></li>
+                                    <li><a href="#roadmap">Roadmap</a></li>
+                                    <li><a href="#faq">FAQ</a></li>
+                                    <li><a href="#" class="whitepaper-btn">Whitepaper</a></li>
+                                </ul>
+                                <ol class="mobile-menu-social">
+                                    <li><a href="#" target="_blank" class="social-link"><img src="./assets/images/icons/twitter-icon.svg" alt="twiter"></a></li>
+                                    <li><a href="#" target="_blank" class="social-link"><img src="./assets/images/icons/telegram.svg" alt="twiter"></a></li>
+                                    <li><a href="#" target="_blank" class="social-link"><img src="./assets/images/icons/discord.svg" alt="twiter"></a></li>
+                                </ol>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </section>
     <!-- Header Section End -->
@@ -305,6 +336,7 @@
             </div>
             <div class="faq-content wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
                 <div class="faq-question">
+                    <img src="./assets/images/shape/faq-shape.png" alt="shape" class="faq-shape">
                     <h4 class="accordion mt-0">
                         How secure is my Investment in Blue Chicken ?
                     </h4>
