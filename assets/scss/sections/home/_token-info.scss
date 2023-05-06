@@ -1,0 +1,33 @@
+.token-info-bg{
+    background: url(../images/bg/token-info-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 100px;
+    border-radius: 50px;
+}
+.token-info-card{
+    padding: 62px 66px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    max-width: 570px;
+    width: 100%;
+    min-height: 685px;
+    h2{
+        color: color(whiteColor);
+        margin-bottom: 33px;
+    }
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        li{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 208%;
+            color: #FFFFFF;
+        }
+    }
+}

@@ -28564,6 +28564,42 @@ CSS table of content
   margin-bottom: 30px;
 }
 
+.token-info-bg {
+  background: url(../images/bg/token-info-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 100px;
+  border-radius: 50px;
+}
+
+.token-info-card {
+  padding: 62px 66px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 50px;
+  max-width: 570px;
+  width: 100%;
+  min-height: 685px;
+}
+.token-info-card h2 {
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+.token-info-card ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.token-info-card ul li {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 208%;
+  color: #FFFFFF;
+}
+
 /*--------------------------------
 07. footer Style
 --------------------------------*/
