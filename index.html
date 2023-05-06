@@ -24,7 +24,7 @@
 
 <body>
     <!-- Header Section Start -->
-    <section class="header-section">
+    <section class="header-section" id="header">
         <div class="container">
             <div class="header-inner">
                 <div class="header-left">
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="banner-right wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <div class="banner-right">
                         <div class="chicken-img">
                             <img src="./assets/images/chicken/banner-chicken2.png" alt="img">
                         </div>
@@ -148,21 +148,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                    <div class="counter-card">
+                    <div class="counter-card counter-number">
                         <p>🛸  Total Supply</p>
-                        <h3>9,999,000,000</h3>
+                        <h3 class="counter">9,999,000,000</h3>
                     </div>
                 </div>
                 <div class="col-md-4 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                    <div class="counter-card">
+                    <div class="counter-card counter-number">
                         <p>🔥  Burned</p>
-                        <h3>2,856,300,000</h3>
+                        <h3 class="counter">2,856,300,000</h3>
                     </div>
                 </div>
                 <div class="col-md-4 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.7s">
-                    <div class="counter-card">
+                    <div class="counter-card counter-number">
                         <p>🚀 Circulating</p>
-                        <h3>2,534,000,000</h3>
+                        <h3 class="counter">2,534,000,000</h3>
                     </div>
                 </div>
             </div>
@@ -382,7 +382,7 @@
                 <a href="index.html" class="footer-logo"><img src="./assets/images/logo/logo.svg" alt="logo"></a>
                 <p>We're not just a meme token, we're a movement. Blue Chicken is all about breaking down barriers, building bridges, and bringing people together through the power of humor.</p>
                 <p class="mt-0">Copyright © 2023 Blue Chicken. All Rights Reserved.</p>
-                <a href="#" class="back-to-top"><img src="./assets/images/icons/top-arrow.svg" alt="icon"></a>
+                <a href="#header" class="back-to-top"><img src="./assets/images/icons/top-arrow.svg" alt="icon"></a>
             </div>
         </div>
     </section>
@@ -397,10 +397,23 @@
     <script src="./assets/js/iconify.min.js"></script>
     <!-- wow js -->
     <script src="./assets/js/wow.min.js"></script>
+    <!-- counter up js -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        // Counter Up
+        var counter = $('.counter');
+        if (counter.length) {
+            $('.counter').counterUp({
+                delay: 20,
+                time: 1500
+            });
+        }
     </script>
     
 </body>
