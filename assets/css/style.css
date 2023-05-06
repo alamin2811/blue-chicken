@@ -28406,8 +28406,7 @@ CSS table of content
 .banner-left {
   position: relative;
 }
-.banner-left::before {
-  content: url(../images/chicken/banner-chicken1.png);
+.banner-left .banner-chicken1 {
   position: absolute;
   top: -35px;
   left: -67px;
@@ -28442,20 +28441,29 @@ CSS table of content
   justify-content: center;
   width: 170px;
   padding: 17px 10px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 50px;
   background: transparent;
   font-weight: 700;
   font-size: 15px;
   line-height: 173%;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.banner-left ul li a:hover {
+  background: #ffffff;
+  color: #111111;
 }
 .banner-left ul li:nth-child(1) a {
   width: 200px;
   background: #F3BA2F;
   border-radius: 50px;
   border-color: #F3BA2F;
+}
+.banner-left ul li:nth-child(1) a:hover {
+  background: #F3BA2F;
+  color: #ffffff;
 }
 
 .banner-right .chicken-img {
@@ -28658,6 +28666,7 @@ CSS table of content
   position: absolute;
   right: 30px;
   top: 23px;
+  animation: rotate360 5s linear infinite;
 }
 
 .roadmap-card-title {
@@ -28698,6 +28707,14 @@ CSS table of content
   border-color: #1DA1F2;
 }
 
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .faq-content {
   max-width: 770px;
   margin: auto;
