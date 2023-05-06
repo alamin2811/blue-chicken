@@ -57,3 +57,22 @@
         bottom: 0px;
     }
 }
+
+@media only screen and (max-width: 1200px){
+    .footer-social-list ul{
+        li{
+            a{
+                height: 180px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px){
+    .footer-social-list ul{
+        li{
+            a{
+                height: 140px;
+            }
+        }
+    }
+}

@@ -57,7 +57,7 @@
     <section class="banner-section uig-pt-145 uig-pb-155">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="banner-left">
                         <img src="./assets/images/chicken/banner-chicken1.png" alt="img" class="banner-chicken1 wow fadeInLeftBig" data-wow-duration="0.5s" data-wow-delay="0.5s">
                         <h1 class="uppercase wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">Blue Chicken <br> A Meme token in BSC Ecosystem</h1>
@@ -69,7 +69,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="banner-right">
                         <div class="chicken-img">
                             <img src="./assets/images/chicken/banner-chicken2.png" alt="img">
@@ -148,21 +148,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                    <div class="counter-card counter-number">
+                    <div class="counter-card">
                         <p>🛸  Total Supply</p>
-                        <h3 class="counter">9,999,000,000</h3>
+                        <h3><span class="counter">9,999,000,000</span></h3>
                     </div>
                 </div>
                 <div class="col-md-4 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                    <div class="counter-card counter-number">
+                    <div class="counter-card">
                         <p>🔥  Burned</p>
-                        <h3 class="counter">2,856,300,000</h3>
+                        <h3><span class="counter">2,856,300,000</span></h3>
                     </div>
                 </div>
                 <div class="col-md-4 wow fadeInUp" data-wow-duration="0.7s" data-wow-delay="0.7s">
-                    <div class="counter-card counter-number">
+                    <div class="counter-card">
                         <p>🚀 Circulating</p>
-                        <h3 class="counter">2,534,000,000</h3>
+                        <h3><span class="counter">2,534,000,000 </span></h3>
                     </div>
                 </div>
             </div>
@@ -229,7 +229,7 @@
             </div>
             <div class="roadmap-content wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-sm-6 uig-mb-30">
                         <div class="roadmap-card active">
                             <div class="roadmap-card-title">
                                 <h4>Phase 01</h4>
@@ -244,7 +244,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-sm-6 uig-mb-30">
                         <div class="roadmap-card">
                             <div class="roadmap-card-title">
                                 <h4>Phase 02</h4>
@@ -260,7 +260,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-sm-6 uig-mb-30">
                         <div class="roadmap-card">
                             <div class="roadmap-card-title">
                                 <h4>Phase 03</h4>
@@ -276,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-sm-6 uig-mb-30">
                         <div class="roadmap-card">
                             <div class="roadmap-card-title">
                                 <h4>Phase 04</h4>
@@ -399,6 +399,9 @@
     <script src="./assets/js/wow.min.js"></script>
     <!-- counter up js -->
     <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script> -->
 
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
@@ -406,14 +409,12 @@
         new WOW().init();
     </script>
     <script>
-        // Counter Up
-        var counter = $('.counter');
-        if (counter.length) {
+        jQuery(document).ready(function($) {
             $('.counter').counterUp({
-                delay: 20,
-                time: 1500
+                delay: 10,
+                time: 1000
             });
-        }
+        });
     </script>
     
 </body>

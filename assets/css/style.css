@@ -345,6 +345,40 @@ img {
 
 /*-- Lib custom End --*/
 /*-- reset style end --*/
+/*-- responsive --*/
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 45px;
+    line-height: 62px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+}
 .section-title .title {
   font-size: 18px;
   font-weight: 700;
@@ -28348,6 +28382,22 @@ CSS table of content
 }
 
 /*-- responsive --*/
+@media only screen and (max-width: 1200px) {
+  .logo {
+    max-width: 160px;
+  }
+  .menu-list {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .menu-list {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+}
 .mobile-menu {
   display: none;
 }
@@ -28482,6 +28532,24 @@ CSS table of content
     transform: translateY(50px);
   }
 }
+@media only screen and (max-width: 991px) {
+  .banner-left {
+    max-width: 580px;
+    margin: auto;
+    text-align: center;
+  }
+  .banner-left h1 {
+    margin: auto;
+  }
+  .banner-left p {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .banner-right .chicken-img {
+    margin: auto;
+  }
+}
 /*--------------------------------
 06. home Style
 --------------------------------*/
@@ -28564,6 +28632,11 @@ CSS table of content
   color: #000000;
 }
 
+@media only screen and (max-width: 991px) {
+  .counter-card {
+    padding: 20px;
+  }
+}
 .our-partners-content {
   padding-top: 30px;
 }
@@ -28585,6 +28658,11 @@ CSS table of content
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .our-partners-content ul li {
+    padding: 0px 10px;
+  }
+}
 .token-info-inner {
   position: relative;
   z-index: 2;
@@ -28639,6 +28717,30 @@ CSS table of content
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 1200px) {
+  .token-info-bg {
+    padding: 50px;
+  }
+  .token-info-card {
+    max-width: 420px;
+    padding: 30px;
+    min-height: 550px;
+    border-radius: 30px;
+  }
+  .token-info-card ul li {
+    font-size: 18px;
+  }
+  .token-chicken-img1 {
+    max-width: 180px;
+    right: 70px;
+    bottom: 145px;
+  }
+  .token-chicken-img2 {
+    max-width: 320px;
+    margin-left: 50px;
+    margin-top: -230px;
+  }
+}
 .roadmap-section {
   position: relative;
   z-index: 0;
@@ -28847,4 +28949,15 @@ CSS table of content
 .main-footer .footer-shape {
   position: absolute;
   bottom: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-social-list ul li a {
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer-social-list ul li a {
+    height: 140px;
+  }
 }
