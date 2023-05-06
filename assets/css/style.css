@@ -74,14 +74,14 @@ h2 {
 
 h3 {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 36px;
 }
 
 h4 {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 32px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 167%;
 }
 
 h5 {
@@ -28271,6 +28271,10 @@ CSS table of content
   color: #FFFFFF;
 }
 
+.section-title {
+  position: relative;
+  z-index: 1;
+}
 .section-title h2 {
   color: #111111;
   text-transform: uppercase;
@@ -28566,6 +28570,7 @@ CSS table of content
 
 .token-info-inner {
   position: relative;
+  z-index: 2;
 }
 
 .token-chicken-img2 {
@@ -28577,12 +28582,18 @@ CSS table of content
 
 .token-info-bg {
   background: url(../images/bg/token-info-bg.png);
-  background-position: center center;
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding: 100px;
   border-radius: 50px;
+}
+
+.token-chicken-img1 {
+  position: absolute;
+  right: 80px;
+  bottom: 180px;
 }
 
 .token-info-card {
@@ -28609,6 +28620,139 @@ CSS table of content
   font-size: 24px;
   line-height: 208%;
   color: #FFFFFF;
+}
+
+.roadmap-section {
+  position: relative;
+  z-index: 0;
+}
+
+.roadmap-container {
+  position: relative;
+}
+
+.roadmap-shape {
+  position: absolute;
+  left: -20%;
+  top: -117%;
+  z-index: 0;
+}
+
+.roadmap-content {
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.roadmap-card {
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  min-height: 100%;
+  overflow: hidden;
+}
+.roadmap-card.active {
+  background: linear-gradient(180deg, rgba(29, 161, 242, 0.2) 0%, rgba(29, 161, 242, 0) 100%);
+  border-radius: 20px;
+}
+.roadmap-card.active .roadmap-card-title::after {
+  content: url(../images/icons/roted-icon.png);
+  position: absolute;
+  right: 30px;
+  top: 23px;
+}
+
+.roadmap-card-title {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 20px 20px 0px 0px;
+  color: #111111;
+  height: 70px;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.roadmap-card-body {
+  padding: 24px 30px;
+}
+.roadmap-card-body ul {
+  list-style: none;
+  margin: 0px;
+}
+.roadmap-card-body ul li {
+  position: relative;
+  margin-bottom: 18px;
+}
+.roadmap-card-body ul li::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+}
+.roadmap-card-body ul li.active::before {
+  background: #1DA1F2;
+  border-color: #1DA1F2;
+}
+
+.faq-content {
+  max-width: 770px;
+  margin: auto;
+  margin-top: 45px;
+}
+.faq-content .faq-question {
+  border-top: 1px dashed rgba(0, 0, 0, 0.25);
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 0px;
+  position: relative;
+  transition: 0.3s;
+}
+.faq-content .faq-question:nth-last-child(1) {
+  margin-bottom: 0px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.25);
+}
+.faq-content .accordion {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #111111;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.faq-content .accordion::after {
+  content: url(../images/icons/icon-plus.svg);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.faq-content .accordion.active {
+  padding-bottom: 12px;
+}
+.faq-content .accordion.active::after {
+  content: url(../images/icons/icon-minuse.svg);
+  position: absolute;
+  top: -5px;
+}
+.faq-content .accordion-panel {
+  padding: 0px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  color: #444444;
+}
+.faq-content .accordion-panel p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.faq-content .accordion-panel p a {
+  color: #1DA1F2;
+  opacity: 80%;
 }
 
 /*--------------------------------

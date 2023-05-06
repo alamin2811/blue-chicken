@@ -36,10 +36,10 @@ h2{
     @include textStyle(40px, 400, 120%);
 }
 h3{
-    @include textStyle(36px, 600, 36px);
+    @include textStyle(36px, 400, 36px);
 }
 h4{
-    @include textStyle(20px, 600, 32px);
+    @include textStyle(24px, 400, 167%);
 }
 h5{
     @include textStyle(18px, 700, 23.44px);

@@ -1,5 +1,6 @@
 .token-info-inner{
     position: relative;
+    z-index: 2;
 }
 .token-chicken-img2{
     margin-left: 100px;
@@ -9,12 +10,17 @@
 }
 .token-info-bg{
     background: url(../images/bg/token-info-bg.png);
-    background-position: center center;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     padding: 100px;
     border-radius: 50px;
+}
+.token-chicken-img1{
+    position: absolute;
+    right: 80px;
+    bottom: 180px;
 }
 .token-info-card{
     padding: 62px 66px;
