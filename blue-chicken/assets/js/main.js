@@ -15,11 +15,6 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
     });
     /*-- sticky header scripts end --*/
 
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-
     /*-- Faq Js Start --*/
     var FAQ = $(".faq-content");
     if (FAQ.length) {
@@ -55,4 +50,11 @@ Author URL: https://themeforest.net/user/uigigs/portfolio
     /*-- Faq Js End --*/
 
     new WOW().init();
+
+    jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
 })(jQuery);
