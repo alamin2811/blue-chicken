@@ -28483,6 +28483,9 @@ CSS table of content
   margin: 20px 0px;
   width: 120px;
 }
+.mobile-menu-social li {
+  padding-right: 40px;
+}
 .mobile-menu-social li a {
   height: 45px;
   width: 45px;
